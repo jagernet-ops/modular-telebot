@@ -19,12 +19,13 @@ public abstract class BotModule {
 
 	public BotModule(Bot bot) {
 	    this.bot = bot;
+	    bot.addModule(this);
 	    init();
 	}
 
     public void addCommand(String command) {
         this.commands.add(command);
-        Log.log("added command '" + command + "'", Log.FLAVOR.Info);
+        Log.log("added command '" + command + "'", Log.FLAVOR.INFO);
     }
 
     public ArrayList<String> getCommands() {

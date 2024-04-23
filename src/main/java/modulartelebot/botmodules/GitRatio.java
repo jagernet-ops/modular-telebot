@@ -1,5 +1,14 @@
 package modulartelebot.botmodules;
 
+<<<<<<< HEAD
+=======
+import java.io.File;
+import java.io.IOException;
+import java.net.URL;
+import java.nio.file.Path;
+import java.util.concurrent.ExecutionException;
+
+>>>>>>> 0b783997cb6f19587b098bb87b638158f23cf0c1
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
 import org.telegram.telegrambots.meta.api.methods.send.SendPhoto;
 import org.telegram.telegrambots.meta.api.objects.InputFile;
@@ -9,6 +18,7 @@ import com.convertapi.client.Config;
 import com.convertapi.client.ConvertApi;
 import com.convertapi.client.Param;
 
+<<<<<<< HEAD
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URI;
@@ -22,6 +32,8 @@ import java.util.concurrent.ExecutionException;
 import java.nio.channels.Channels;
 import java.nio.channels.FileChannel;
 
+=======
+>>>>>>> 0b783997cb6f19587b098bb87b638158f23cf0c1
 import modulartelebot.Bot;
 import modulartelebot.BotModule;
 
@@ -34,7 +46,11 @@ public class GitRatio extends BotModule {
   public GitRatio(Bot bot, String convertApiToken){
     super(bot);
     Config.setDefaultSecret(convertApiToken);
+<<<<<<< HEAD
     setCommand("/ratio");
+=======
+    addCommand("/ratio");
+>>>>>>> 0b783997cb6f19587b098bb87b638158f23cf0c1
   }
 
   private File getGitActivity(URL url, String fileName) throws InterruptedException, ExecutionException, IOException{
@@ -88,4 +104,9 @@ public class GitRatio extends BotModule {
     }
   }
 
+<<<<<<< HEAD
+=======
+  @Override
+  public void init() {}
+>>>>>>> 0b783997cb6f19587b098bb87b638158f23cf0c1
 }
